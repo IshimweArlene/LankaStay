@@ -27,47 +27,11 @@ const Register = () => {
         <div className="w-full md:w-1/2 flex items-center justify-center p-8 bg-gray-50">
             <div className="w-full max-w-md space-y-8">
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">CREATE ACCOUNT</h2>
-                    <p className="text-gray-600">Join LankaStay for the best stay experience</p>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-2">LOGIN ACCOUNT</h2>
                 </div>
 
                 <form className="mt-8 space-y-6">
                     <div className="space-y-4">
-                        <div>
-                            <label htmlFor="name" className="block text-lg font-medium text-gray-700 mb-1">Name</label>
-                            <input 
-                                type="text" 
-                                id="name"
-                                placeholder="Enter your Name" 
-                                name="username" 
-                                required 
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-gray-700 text-lg"
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="email" className="block text-lg font-medium text-gray-700 mb-1">Email</label>
-                            <input 
-                                type="email" 
-                                id="email"
-                                placeholder="name@gmail.com" 
-                                name="email" 
-                                required 
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-gray-700 text-lg"
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="phone" className="block text-lg font-medium text-gray-700 mb-1">Phone</label>
-                            <input 
-                                type="tel" 
-                                id="phone"
-                                placeholder="With country code" 
-                                name="phone" 
-                                required 
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-gray-700 text-lg"
-                            />
-                        </div>
 
                         <div>
                             <label htmlFor="username" className="block text-lg font-medium text-gray-700 mb-1">Username</label>
@@ -110,11 +74,11 @@ const Register = () => {
                         type="submit"
                         className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-medium"
                     >
-                        Register
+                        Login
                     </button>
                 </form>
                 <div className='flex flex-col items-center mt-4 justify-center'>
-                    <a href='/login' className='underline text-xl '>Login</a>
+                    <a href='/login' className='underline text-xl '>Create Account</a>
                 </div>
             </div>
         </div>
