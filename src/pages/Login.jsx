@@ -13,7 +13,7 @@ const Login = () => {
 
     setTimeout(() => {
       console.log("Logged in successfully!");
-      navigate('/home'); 
+      navigate('/'); 
     }, 1000);
   };
 
@@ -84,12 +84,13 @@ const Login = () => {
                     <button 
                         type="submit"
                         className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-medium"
-                    >
+                        onClick={handleLogin}
+                   >
                         Login
                     </button>
                 </form>
                 <div className='flex flex-col items-center mt-4 justify-center'>
-                    <a href='/' className='underline text-xl '>Create Account</a>
+                    <a href='/Register' className='underline text-xl '>Create Account</a>
                 </div>
             </div>
         </div>

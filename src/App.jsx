@@ -4,6 +4,9 @@ import Login from './pages/Login';
 import RegisterHero from './hero/RegisterHero';
 import Home from './pages/Home'
 import OwnerRegister from './pages/OwnerRegister';
+import OwnerRegisterSuccess from './hero/OwnerRegisterSuccess';
+import Dashboard from './pages/Dashboard';
+import Details from './pages/Details';
 function App() {
   return (
     <Router>
@@ -13,6 +16,9 @@ function App() {
         <Route path="/RegisterHero" element={<RegisterHero />} />
         <Route path="/" element={<Home />} />
         <Route path='OwnerRegister' element={<OwnerRegister />} />
+        <Route path='OwnerRegisterSuccess' element={<OwnerRegisterSuccess />} />
+        <Route path='Dashoboard' element={<Dashboard />} />
+        <Route path='Details' element={<Details />} />
       </Routes>
     </Router>
   );

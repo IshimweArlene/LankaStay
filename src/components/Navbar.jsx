@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 const Navbar = () => {
     const location = useLocation();
     const Links = [
-        {name:'Home', href:'/home'},
+        {name:'Home', href:'/'},
         {name:'Hotels', href:'/Hotels'},
         {name:'Rooms', href:'/Rooms'},
         {name:'About', href:'/About'},
@@ -22,7 +22,7 @@ const Navbar = () => {
 
       {/* Centered Links */}
         <div className='relative flex align-middle justify-evenly w-full gap-8'>
-            <ul className="flex  space-x-8 mx-auto absolute right-28 top-[-8px] ">
+            <ul className="flex  space-x-8 mx-auto absolute right-28 top-[-8px] text-gray-700 font-medium">
                 {Links.map((linkItem) => (
                 <li key={linkItem.name} className="font-normal text-xl">
                     <Link
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="flex items-center ">
         <Link
           to="/login"
-          className="bg-blue-900 w-28 mr-32 text-white px-6 py-2 text-center text-lg rounded-md font-semibold shadow hover:bg-blue-700 transition"
+          className="bg-blue-600 w-28 mr-32 text-white px-6 py-2 text-center text-lg rounded-md font-semibold shadow hover:bg-blue-700 transition"
         >
           Login
         </Link>

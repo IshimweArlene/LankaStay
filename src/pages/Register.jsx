@@ -25,9 +25,9 @@ const Register = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-          <div className="bg-white bg-opacity-60 backdrop-blur-lg shadow-lg border-opacity-20 w-2/3 h-[600px] p-8 rounded-3xl flex flex-col justify-center items-center text-white text-center">
+          <div className="bg-white bg-opacity-10 backdrop-blur-lg shadow-lg border-opacity-20 w-2/3 h-[600px] p-8 rounded-3xl flex flex-col justify-center items-center text-white text-center">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="text-blue-600 font-semibold text-5xl">Lanka</span>
+              <span className="text-blue-700 font-semibold text-5xl">Lanka</span>
               <span className="text-blue-900 font-semibold text-5xl">Stay.</span>
             </h2>
             <p className="text-lg">Your perfect stay in Sri Lanka</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar'
 import { FaUser, FaCamera, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
 import MyImage from '../assets/download.jpg'; 
@@ -8,7 +9,16 @@ import MostPicked from '../components/MostPicked';
 import Footer from '../components/Footer';
 
 const Home = () => {
-  
+  const navigate = useNavigate();
+
+  const handleClick= (e) =>{
+    e.preventDefault();
+
+   setTimeout(() =>{
+    navigate ('/Details')
+   }, 1000);
+  }
+
   return (
     <div className='w-full h-screen bg-white'>
       <div>
@@ -66,7 +76,7 @@ const Home = () => {
       <div> 
         <div className='bg-blue-50 ml-36 mr-32  mb-20 h-28 align-middle flex p-8 justify-evenly rounded-full'>
           <div className='flex justify-between items-center w-full px-4'>
-            <button className='bg-white text-black w-56 h-16 text-lg rounded-3xl flex items-center justify-center'>
+            <button className='bg-white text-black w-56 h-16 text-lg rounded-3xl flex items-center justify-center' onClick={handleClick}>
               <span><CalendarPlus /></span>
               Check Available
             </button>
