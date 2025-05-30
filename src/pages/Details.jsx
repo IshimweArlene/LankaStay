@@ -11,7 +11,17 @@ import pic2 from '../assets/pic2.png'
 import pic3 from '../assets/pic3.png'
 import pic4 from '../assets/pic4.png'
 import Footer from '../components/Footer'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 const Details = () => {
+ const navigate = useNavigate()
+ const handleClick =(e) => {
+   e.preventDefault ();
+
+    setTimeout (() =>{ 
+      navigate ('/Booking')
+    },1000 );
+ }
   return (
     <div>
     <Navbar />
@@ -41,7 +51,7 @@ const Details = () => {
         <div className='bg-white shadow-lg py-8 px-28 mb-12 w-5/6 border border-gray-200 rounded-xl'>
           <h2 className='text-blue-950 font-semibold text-2xl mb-5'>Start booking</h2>
           <p className='text-4xl mb-12 '><span className='text-emerald-500 font-semibold'>$200 </span ><span className='text-gray-500 font-light'>per Day</span></p>
-          <button className='w-72 h-14 mb-6 rounded-2xl text-center font-bold text-white text-xl bg-blue-600'>Book Now!</button>
+          <button className='w-72 h-14 mb-6 rounded-2xl text-center font-bold text-white text-xl bg-blue-600' onClick={handleClick}>Book Now!</button>
         </div>
       </div>
       

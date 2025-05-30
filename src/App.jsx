@@ -7,18 +7,24 @@ import OwnerRegister from './pages/OwnerRegister';
 import OwnerRegisterSuccess from './hero/OwnerRegisterSuccess';
 import Dashboard from './pages/Dashboard';
 import Details from './pages/Details';
+import Booking from './pages/bookings/Booking';
+import Payment from './pages/bookings/Payment'
+import Completion from './pages/bookings/Completion'
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/RegisterHero" element={<RegisterHero />} />
+        <Route path="/registerHero" element={<RegisterHero />} />
         <Route path="/" element={<Home />} />
-        <Route path='OwnerRegister' element={<OwnerRegister />} />
-        <Route path='OwnerRegisterSuccess' element={<OwnerRegisterSuccess />} />
-        <Route path='Dashoboard' element={<Dashboard />} />
-        <Route path='Details' element={<Details />} />
+        <Route path='/ownerRegister' element={<OwnerRegister />} />
+        <Route path='/ownerRegisterSuccess' element={<OwnerRegisterSuccess />} />
+        <Route path='/dashoboard' element={<Dashboard />} />
+        <Route path='/details' element={<Details />} />
+        <Route path='/booking' element={<Booking />} />
+        <Route path='/payment' element={<Payment />} />
+        <Route path='/completion' element={<Completion />} />
       </Routes>
     </Router>
   );
