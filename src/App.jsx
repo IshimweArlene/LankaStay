@@ -22,6 +22,7 @@ function App() {
         <Route path='/ownerRegisterSuccess' element={<OwnerRegisterSuccess />} />
         <Route path='/dashoboard' element={<Dashboard />} />
         <Route path='/details' element={<Details />} />
+        <Route path='/details/:id' element={<Details />} />
         <Route path='/booking' element={<Booking />} />
         <Route path='/payment' element={<Payment />} />
         <Route path='/completion' element={<Completion />} />

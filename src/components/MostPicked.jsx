@@ -18,9 +18,9 @@ import room3 from '../assets/room3.jpg'
 const MostPicked = () => {
   const navigate = useNavigate();
 
-  const handlePriceClick = (e) => {
+  const handlePriceClick = (hotelId) => (e) => {
     e.preventDefault();
-    navigate('/details');
+    navigate(`/details/${hotelId}`);
   };
 
   return (
@@ -28,85 +28,85 @@ const MostPicked = () => {
         <h2 className='text-3xl font-bold text-blue-950 mb-6 mx-20'>Most Picked</h2>
         <div>
             <div className='grid grid-cols-3 grid-rows-2 gap-4 mx-12 mb-36'>
-                <div className='relative row-span-2 mr-8'>
-                    <img src={img1} alt="Most Picked 1" className='w-[360px] h-[530px] ml-8 rounded-3xl'/>
+                <div className='relative row-span-2 h-[600px]'>
+                    <img src={img1} alt="Most Picked 1" className='w-full h-full object-cover rounded-3xl'/>
                     <div
-                        onClick={handlePriceClick}
-                        className='absolute top-0 rounded-tr-3xl right-3 text-white text-center text-xl w-48 h-12 bg-blue-600 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-700 transition-colors'
+                        onClick={handlePriceClick(1)}
+                        className='absolute top-0 rounded-tr-3xl right-0 text-white text-center text-xl w-48 h-12 bg-blue-600 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-700 transition-colors'
                     >
                         50$ per night
                     </div>
-                    <div className='absolute bottom-14 left-14 text-slate-50 text-2xl'>
+                    <div className='absolute bottom-14 left-8 text-slate-50 text-2xl'>
                         Blue Origin Fams
                     </div>
-                    <div className='absolute bottom-6 left-14 text-slate-100 text-xl'>
+                    <div className='absolute bottom-6 left-8 text-slate-100 text-xl'>
                         Galle, Sri Lanka
                     </div>
                 </div>
-                <div className='relative'>
-                    <img src={img2} alt="Most Picked 1" className='w-[390px] h-[250px] rounded-3xl'/>
+                <div className='relative h-[290px]'>
+                    <img src={img2} alt="Most Picked 1" className='w-full h-full object-cover rounded-3xl'/>
                     <div
-                        onClick={handlePriceClick}
-                        className='absolute top-0 rounded-tr-3xl right-3 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
+                        onClick={handlePriceClick(2)}
+                        className='absolute top-0 rounded-tr-3xl right-0 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
                     >
                         22$ per night
                     </div>
-                    <div className='absolute bottom-14 left-14 text-slate-50 text-2xl'>
+                    <div className='absolute bottom-14 left-8 text-slate-50 text-2xl'>
                         Ocean Lund
                     </div>
-                    <div className='absolute bottom-6 left-14 text-slate-100 text-xl'>
+                    <div className='absolute bottom-6 left-8 text-slate-100 text-xl'>
                         Trincomalle, Sri Lanka
                     </div>
                 </div>
-                <div className='relative'>
-                    <img src={img3} alt="Most Picked 1" className='w-[390px] h-[250px] rounded-3xl'/>
+                <div className='relative h-[290px]'>
+                    <img src={img3} alt="Most Picked 1" className='w-full h-full object-cover rounded-3xl'/>
                     <div
-                        onClick={handlePriceClick}
-                        className='absolute top-0 rounded-tr-3xl right-3 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
+                        onClick={handlePriceClick(3)}
+                        className='absolute top-0 rounded-tr-3xl right-0 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
                     >
                         856$ per night
                     </div>
-                    <div className='absolute bottom-14 left-14 text-slate-50 text-2xl'>
+                    <div className='absolute bottom-14 left-8 text-slate-50 text-2xl'>
                         Stark House
                     </div>
-                    <div className='absolute bottom-6 left-14 text-slate-100 text-xl'>
+                    <div className='absolute bottom-6 left-8 text-slate-100 text-xl'>
                         Dehiwala, Sri Lanka
                     </div>
                 </div>
-                <div className='relative'>
-                    <img src={img4} alt="Most Picked 1" className='w-[390px] h-[250px] rounded-3xl'/>
+                <div className='relative h-[290px]'>
+                    <img src={img4} alt="Most Picked 1" className='w-full h-full object-cover rounded-3xl'/>
                     <div
-                        onClick={handlePriceClick}
-                        className='absolute top-0 rounded-tr-3xl right-3 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
+                        onClick={handlePriceClick(4)}
+                        className='absolute top-0 rounded-tr-3xl right-0 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
                     >
                         62$ per night
                     </div>
-                    <div className='absolute bottom-14 left-14 text-slate-50 text-2xl'>
+                    <div className='absolute bottom-14 left-8 text-slate-50 text-2xl'>
                         Vinna Vill
                     </div>
-                    <div className='absolute bottom-6 left-14 text-slate-100 text-xl'>
+                    <div className='absolute bottom-6 left-8 text-slate-100 text-xl'>
                         Beruwala, Sri Lanka
                     </div>
                 </div>
-                <div className='relative'>
-                    <img src={img6} alt="Most Picked 1" className='w-[390px] h-[250px] rounded-3xl'/>
+                <div className='relative h-[290px]'>
+                    <img src={img6} alt="Most Picked 1" className='w-full h-full object-cover rounded-3xl'/>
                     <div
-                        onClick={handlePriceClick}
-                        className='absolute top-0 rounded-tr-3xl right-3 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
+                        onClick={handlePriceClick(5)}
+                        className='absolute top-0 rounded-tr-3xl right-0 text-white text-center text-xl w-48 h-12 bg-blue-700 p-2 rounded-lg shadow-md cursor-pointer hover:bg-blue-800 transition-colors'
                     >
                         72$ per night
                     </div>
-                    <div className='absolute bottom-14 left-14 text-slate-50 text-2xl'>
+                    <div className='absolute bottom-14 left-8 text-slate-50 text-2xl'>
                         Bobox
                     </div>
-                    <div className='absolute bottom-6 left-14 text-slate-100 text-xl'>
+                    <div className='absolute bottom-6 left-8 text-slate-100 text-xl'>
                         Kandy, Sri Lanka
                     </div>
                 </div>
             </div>
 
             <div className='grid grid-cols-4 gap-4 mx-12 mb-24 '>
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(6)}>
                     <div>
                         <img src={img7} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -119,7 +119,7 @@ const MostPicked = () => {
                     </div>
                 </div>
 
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(7)}>
                     <div>
                         <img src={orign} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -129,7 +129,7 @@ const MostPicked = () => {
                     </div>
                 </div>
 
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(8)}>
                     <div>
                         <img src={green} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -139,7 +139,7 @@ const MostPicked = () => {
                     </div>
                 </div>
 
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(9)}>
                     <div>
                         <img src={reg} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -149,7 +149,7 @@ const MostPicked = () => {
                     </div>
                 </div>
 
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(10)}>
                     <div>
                         <img src={img5} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -158,7 +158,7 @@ const MostPicked = () => {
                         <p className='text-xl text-gray-700'> Kandy, Sri Lanka</p>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(11)}>
                     <div>
                         <img src={room1} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -167,7 +167,7 @@ const MostPicked = () => {
                         <p className='text-xl text-gray-700'> Nuwereliya, Sri Lanka</p>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(12)}>
                     <div>
                         <img src={room2} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
@@ -176,7 +176,7 @@ const MostPicked = () => {
                         <p className='text-xl text-gray-700'> Dehiwala, Sri Lanka</p>
                     </div>
                 </div>
-                <div className='relative'>
+                <div className='relative cursor-pointer' onClick={handlePriceClick(13)}>
                     <div>
                         <img src={img8} className='w-[390px] h-[250px] rounded-3xl mx-3'/>
                     </div>
