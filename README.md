@@ -1,12 +1,38 @@
-# React + Vite
+# LumenStay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LumenStay is a visually-driven hotel booking interface that reimagines how users explore and choose where to stay.
 
-Currently, two official plugins are available:
+Instead of overwhelming users with information, it focuses on clarity, atmosphere, and speed — turning the browsing experience into something calm, intuitive, and almost effortless.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Designed as a frontend-only project, LumenStay demonstrates how far thoughtful UI, smooth interactions, and strong visual hierarchy can go in solving real-world problems without backend complexity.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What Makes It Different
+
+- Clean, distraction-free interface focused on user flow  
+- Smooth filtering and browsing experience  
+- Emphasis on visuals over cluttered data  
+- Fast, responsive interactions across devices  
+- Premium feel without unnecessary complexity  
+
+---
+
+## Tech Stack
+
+- React (UI architecture)  
+- Tailwind CSS (styling)  
+
+> No backend — all data is handled on the client side.
+
+---
+
+## Live Demo
+
+https://lankastay.vercel.app  
+
+---
+
+## Note
+
+This project focuses purely on frontend experience and UI design, making it a strong showcase of modern React development and product thinking.
