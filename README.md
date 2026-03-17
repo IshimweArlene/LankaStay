@@ -1,6 +1,6 @@
-# LumenStay
+# LankaStay
 
-LumenStay is a visually-driven hotel booking interface that reimagines how users explore and choose where to stay.
+LankaStay is a visually-driven hotel booking interface that reimagines how users explore and choose where to stay.
 
 Instead of overwhelming users with information, it focuses on clarity, atmosphere, and speed — turning the browsing experience into something calm, intuitive, and almost effortless.
 
